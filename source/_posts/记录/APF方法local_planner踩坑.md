@@ -24,13 +24,87 @@ tags:
 
 1. 距离很近的障碍物之间没有通道（不能通过）；
 2. 在狭小环境下，机器人可能陷入平衡位置，并且会振荡或以闭环运行；
-3. GNRON(Goals nonreachable with obstacle near by)无法到达障碍物附近的目标。
+3. GNRON（Goals nonreachable with obstacle near by）无法到达障碍物附近的目标。
 
+
+## 手动实现APF
+
+### 思路
+
+在激光的回调函数中调用，拿到Lansecan的数据，数据结构如下：
+
+```bash
+sensor_msgs/LaserScan
+
+angle_min (float32) scan 的开始角度 [弧度]
+angle_max (float32) scan 的结束角度 [弧度]
+angle_increment (float32) 测量的角度间的距离 [弧度]
+time_increment (float32) 测量间的时间 [秒] – 如果扫描仪在移动,这将用于插入 3D 点的位置
+scan_time (float32) 扫描间的时间 [秒]
+range_min (float32) 最小的测量距离 [米]
+range_max (float32) 最大的测量距离 [米]
+```
+
+在world中拿到goal（目标点）和机器人所在位置坐标，分别为goal_（x，y），pose_（x，y）。然后计算goal与pose的欧式距离r，再使用atan2（dy，dx）计算出目标点相对当前位置的角度theta_goal，单位 [弧度]，其中dy = goal_（y）-pose_（y），dx同理。这里theta_goal是在世界坐标系中的，而非机器人坐标系。
+
+```c++
+pose_x = goal_.pose.position.x - pose_.pose.position.x;
+pose_y = goal_.pose.position.y - pose_.pose.position.y;
+float theta_goal = atan2(pose_y, pose_x);
+float r = sqrt(pow(pose_x, 2) + pow(pose_y, 2));
+```
+
+引力场计算公式：
+
+$$
+U_{att}(q) = \frac12\xi r^2 
+$$
+
+引力场下的引力计算为：
+
+$$
+F_{att} = -\Delta U_{att}(q) = \xi r
+$$
+
+这里将系数设置为GOAL_FORCE（default=1），需要进行世界坐标系的xy分解：
+
+```c++
+pose_x = goal_.pose.position.x - pose_.pose.position.x;
+pose_y = goal_.pose.position.y - pose_.pose.position.y;
+float theta_goal = atan2(pose_y, pose_x);
+float r = sqrt(pow(pose_x, 2) + pow(pose_y, 2));
+float goal_force = GOAL_FORCE * r;
+float goal_x = goal_force * cos(theta_goal);
+float goal_y = goal_force * sin(theta_goal);
+```
+
+斥力场计算公式：
+
+$$
+U_{rep}(q) = \frac12 \eta \left( \frac{1}{\rho (q,q_{obs})} - \frac1{\rho_0} \right)^2 \rho ^n(q,q_{goal}), \rho (q,q_{obs}) \leq \rho_0
+$$
+
+$$
+U_{rep}(q) = 0, \rho (q,q_{obs}) > \rho_0
+$$
+
+这里需要设置两个系数，参数n和阈值p0,在原有的斥力场中加上目标点和机器人距离的影响，来缓解GNRON问题。参数n一般设置为2，阈值p0是障碍物的影响半径，如果机器人距离障碍物一定距离，即使可以看见障碍物，也对机器人没有影响。
+
+斥力计算：
+
+$$
+F_{rep}(q) = -\Delta U_{rep}(q) = F_{rep1}n_{OR} + F_{req2}n_{RG} , \rho (q,q_{obs}) \leq \rho_0
+$$
+
+$$
+F_{rep1}=\eta \left( \frac1{\rho (q,q_{obs})} - \frac1{\rho_0} \right) \frac{\rho ^n(q,q_{goal})}{\rho (q,q_{obs})},F_{req2}=\frac{n}{2}\eta \left( \frac1{\rho (q,q_{obs})} - \frac1{\rho_0} \right)^2\rho ^{n-1}(q,q_{goal})
+$$
+
+### 遇到的问题：
 
 不需要发布点云
 
 atan2方法的参数为y，x
 
-theta为世界坐标系中的弧度值
-
+theta为世界坐标系中的弧度值，因为LaserScan中的angle_min与angle_max都是在世界坐标系下的弧度值，且已知（）
 启发式算法以计算角度值代替角速度值
