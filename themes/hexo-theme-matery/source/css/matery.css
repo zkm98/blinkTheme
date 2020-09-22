@@ -35,6 +35,8 @@
 
 body {
     background-color: #eaeaea;
+    /* background: linear-gradient(60deg, #00cdac 0%, #8ddad5 100% ); */
+    background-attachment: fixed;
     margin: 0;
     color: #34495e;
 }
@@ -562,10 +564,10 @@ header .go-back i {
     height: 40vh !important;
 }
 
-.bg-cover:after {
+/* .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-}
+} */
 
 .bg-cover:before,
 .bg-cover:after {

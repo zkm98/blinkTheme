@@ -59,8 +59,8 @@ music:
     show: 听听音乐
   autoHide: true    # hide automaticaly
   server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
-  type: song    #require song, playlist, album, search, artist
-  id: 536817     #require	song id / playlist id / album id / search keyword
+  type: playlist    #require song, playlist, album, search, artist
+  id: 752365737     # require	song id / playlist id / album id / search keyword
   fixed: true       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: '#42b983'
@@ -123,7 +123,7 @@ socialLink:
 # 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
 toc:
   enable: true
-  heading: h2, h3, h4
+  heading: h2, h3, h4, h5, h6
   collapseDepth: 0 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 

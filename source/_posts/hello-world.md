@@ -33,6 +33,7 @@ windows下直接安装就OK。这里采用了NVM的Node版本管理来做安装,
 ### [NVM github][NVM github]
 
 
+
 [gitpage_hexo]:https://developer.aliyun.com/article/387750
 [Valine]:https://valine.js.org/
 [gitpage_jekyll]:https://sspai.com/post/54608
