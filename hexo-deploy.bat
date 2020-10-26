@@ -1,1 +1,1 @@
-hexo c;hexo g;hexo d
+hexo clean & hexo generate & hexo deploy

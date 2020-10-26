@@ -34,7 +34,7 @@ windows下直接安装就OK。这里采用了NVM的Node版本管理来做安装,
 
 ## 仓库主题下载使用
 
-[仓库地址]()
+[仓库地址](https://github.com/zhangyuanes/blinkTheme),请参照readme.
 
 [gitpage_hexo]:https://developer.aliyun.com/article/387750
 [Valine]:https://valine.js.org/
