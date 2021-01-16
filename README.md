@@ -34,7 +34,7 @@ npm run build
 ```bash
 npm run server
 ```
-访问`http://localhost:4000`即可看到页面。
+访问`http://localhost:4000`即可看到页面。预先配置有hexo-admin，在url结尾加入`/admin`即可进入管理页面，可以在线md交互预览编辑。
 
 预览渲染没有问题可以使用命令推送到远程仓库：需要预先设置`_config.yml`中的部署配置
 ```
@@ -50,7 +50,6 @@ deploy:
 本项目代码唯一需要用户单独存档的仅仅为`source/_posts`下的原始md文章页面以及对应的配图。
 
 补：配图请放在`source/medias`中，如果需要分类请在此文件夹下新建文件夹放置即可，在页面中引用地址为：`/medias/******.jpg`。
-
 
 ## License
 
