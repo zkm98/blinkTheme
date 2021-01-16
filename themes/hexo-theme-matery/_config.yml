@@ -45,7 +45,7 @@ cover:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: true
+  enable: false
   showTitle: true
   title: 我的梦想
   text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
@@ -73,7 +73,7 @@ music:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: true
+  enable: false
   showTitle: true
   title: 精彩视频
   url: /medias/videos/demo.mp4 # 必填
@@ -136,10 +136,10 @@ code:
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
-  enable: false
+  enable: true
   title: 你的赏识是我前进的动力
   wechat: /medias/reward/wechat.png
-  alipay: /medias/reward/alipay.jpg
+  alipay: /medias/reward/alipay.png
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
@@ -179,15 +179,20 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
+  avatar: /medias/bro.jpg
   career: 软件工程师
   introduction: 学习是为了更好的摸鱼。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+# hexo-theme-matery:
+#       icon: fas fa-rocket
+#       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+#       url: http://github.com/blinkfox/hexo-theme-matery
+#       desc: 一个采用 Material Design 和响应式设计的 Hexo 博客主题。
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fas fa-rocket
@@ -206,14 +211,11 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    C++:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 90%
+      percent: 80%
     JavaScript:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 80%
-    C++:
-      background: 'linear-gradient(to left, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
     HTML5:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
@@ -221,6 +223,9 @@ mySkills:
     CSS:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
+    Linux:
+      background: 'linear-gradient(to left, #9900FF 0%, #CC66FF 100%)'
+      percent: 80%
     SQL:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
       percent: 90%
@@ -234,9 +239,16 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    - /medias/banner/0.jpg
+    - /medias/banner/1.jpg
+    - /medias/banner/2.jpg
+    - /medias/banner/3.jpg
+    - /medias/banner/4.jpg
+    - /medias/banner/5.jpg
+    - /medias/banner/6.jpg
+    - /medias/banner/7.jpg
+    - /medias/banner/8.jpg
+    - /medias/banner/9.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
