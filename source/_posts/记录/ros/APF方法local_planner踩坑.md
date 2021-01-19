@@ -6,8 +6,10 @@ author: zhangyuanes
 categories: 记录
 mathjax: ture
 tags:
+  - ROS
   - SLAM
   - 人工势场法
+  - 局部路径规划
 ---
 
 ## 人工势场法（Artificial Potential Field）
@@ -25,7 +27,6 @@ tags:
 1. 距离很近的障碍物之间没有通道（不能通过）；
 2. 在狭小环境下，机器人可能陷入平衡位置，并且会振荡或以闭环运行；
 3. GNRON（Goals nonreachable with obstacle near by）无法到达障碍物附近的目标。
-
 
 ## 手动实现APF
 
@@ -154,7 +155,7 @@ if (temp_min_i != -1) {
 
 力的合成高中物理，无需赘述。合成之后如果合力的方向与目标引力的方向一致，可能落入局部最小，需要给予扰动力让其逃逸。
 
-```c++
+```c
 // 计算在x，y轴方向上的合力：斥合力+吸引力, attention: *r
 float force_x = repulsion_resultant_x * r + goal_x;
 float force_y = repulsion_resultant_y * r + goal_y;
@@ -168,7 +169,7 @@ if(theta_goal == theta){
 
 此外机器人移动发布的消息类型为cmd_vel需要指定线速度和角速度，所以需要进行合力到速度的映射。角速度需要优先考虑，因为机器人的旋转是其改变方向避开障碍物的第一步，这里就是计算出合力角度 theta 和 yaw的差值角度，假设时间间隔dt = 1来将其直接设置为角速度 angular.z；线速度如果变动不光滑在初步实现demo的时候也不用太过在意，直接写死简化处理方式（注释代码段，这个地方其实也有bug，因为速度的线性减小会逐步累加而导致最后速度很小，需要额外增加恢复函数）。
 
-```c++
+```c
 // 角度变化并放缩到-PI到PI之间
 float radian_speed = theta - pose_.pose.position.z;
 if (radian_speed > PI) {
@@ -200,7 +201,7 @@ geometry_msgs::Twist vel_msg;
 - 线速度与角速度的平滑函数很复杂，之前尝试使用加速度与角加速度去实现速度映射，发现不可行，机器人的运动无法预测。
 - 善用可视化——在最开始遇到机器人的运动无法预测没有想到可视化，只是将数据打印了出来，然后使用rqt工具观察，发现角速度的变化是正常的，而合力很小，斥力很大，大的离谱，这时候合力对机器人的运动起不到影响作用，斥力直接影响合力方向，后面查看代码时候发现是这一段：
 
-```c++
+```js
 for (int i = 0; i < total_points; i++){
 			if(scan_filtered.ranges[i] > MAX_RANGE || scan_filtered.ranges[i] == 0)	
 				continue;
@@ -242,4 +243,4 @@ if (repulsion_resultant_y != 0 || repulsion_resultant_x != 0) {
 ```
 
 在rviz中展示的效果如下：
-![apf-rviz](/medias/apf-rviz.jpg)
+![apf-rviz](https://cdn.jsdelivr.net/gh/zhangyuanes/thirdPic/img/apf-rviz.jpg)
