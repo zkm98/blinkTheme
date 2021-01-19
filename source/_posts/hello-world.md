@@ -2,7 +2,7 @@
 title: Hello World to Hexo
 date: 2020-09-11 20:26:00
 author: zhangyuanes
-categories: 建站
+categories: 博客搭建
 tags:
   - Hexo
   - Gitpage
