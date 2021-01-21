@@ -8,39 +8,7 @@ tags:
   - Algorithm
 ---
 
-# Before
-
-此项目来源于jwasham作者的项目——[Coding Interview University](https://github.com/jwasham/coding-interview-university/)。
-
-因为本人是学C++的，所以其中就只保留了C++的部分。整体的流程缩减了许多，而且一些写给入门程序员的教学、建议的部分也删除了。
-
-对于其中特别重要的部分，或者我刷过的部分会写专题来梳理。本文章原版请参考原文。
-
-# Coding Interview University
-
-原先我为了成为一个软件工程师而建立这份简单的学习主题清单， 但这份清单随着时间而膨胀成今天这样。在做完这份清单上的每个目标后，[我成为了 Amazon 的软件开发工程师](https://startupnextdoor.com/ive-been-acquired-by-amazon/?src=ciu)! 你或许不需要像我一样学习这么多。但是，让你成为一位称职工程师所需要的知识都在这里了。
-
-我每天自学8~12小时，这样持续了好几个月。这是我的故事：[为什么我为了 Google 面试而自学了8个月](https://medium.freecodecamp.org/why-i-studied-full-time-for-8-months-for-a-google-interview-cc662ce9bb13)。
-
-在这份清单内的主题会让你拥有足够的知识去面对几乎每家软件公司的技术面试，包括科技巨头：Amazon、Facebook、Google，以及 Microsoft。
-
-祝你好运!
-
-## 这是？
-
-这是我为了从 web 开发者（自学、非计算机科学学位）蜕变至 Google 软件工程师所制定的计划，其内容历时数月。
-
-![白板上编程 ———— 来自 HBO 频道的剧集，“硅谷”](https://d3j2pkmjtin6ou.cloudfront.net/coding-at-the-whiteboard-silicon-valley.png)
-
-这份清单适用于 **新手软件工程师**，或者想从软件/网站开发转向软件工程（需要计算机科学知识）的人员。如果你有多年的经验，并且声称拥有多年的软件工程经验，并且期待一次更艰难的面试。
-
-如果你具有多年的软件/网页开发经验，请注意，大型软件公司（例如 Google，Amazon，Facebook 和 Microsoft）将软件工程视为不同于软件/网页开发，并且它们需要计算机科学知识。
-
-如果你想成为可靠性工程师或运维工程师，请从可选列表（网络，安全）中学习更多。
-
----
-
-## 目录
+# 目录
 
 - [这是？](#这是)
 - [为何要用到它？](#为何要用到它)
@@ -154,6 +122,38 @@ tags:
 - [视频系列](#视频系列)
 - [计算机科学课程](#计算机科学课程)
 - [论文](#论文)
+
+---
+
+# Before
+
+此项目来源于jwasham作者的项目——[Coding Interview University](https://github.com/jwasham/coding-interview-university/)。
+
+因为本人是学C++的，所以其中就只保留了C++的部分。整体的流程缩减了许多，而且一些写给入门程序员的教学、建议的部分也删除了。
+
+对于其中特别重要的部分，或者我刷过的部分会写专题来梳理。本文章原版请参考原文。
+
+# Coding Interview University
+
+原先我为了成为一个软件工程师而建立这份简单的学习主题清单， 但这份清单随着时间而膨胀成今天这样。在做完这份清单上的每个目标后，[我成为了 Amazon 的软件开发工程师](https://startupnextdoor.com/ive-been-acquired-by-amazon/?src=ciu)! 你或许不需要像我一样学习这么多。但是，让你成为一位称职工程师所需要的知识都在这里了。
+
+我每天自学8~12小时，这样持续了好几个月。这是我的故事：[为什么我为了 Google 面试而自学了8个月](https://medium.freecodecamp.org/why-i-studied-full-time-for-8-months-for-a-google-interview-cc662ce9bb13)。
+
+在这份清单内的主题会让你拥有足够的知识去面对几乎每家软件公司的技术面试，包括科技巨头：Amazon、Facebook、Google，以及 Microsoft。
+
+祝你好运!
+
+## 这是？
+
+这是我为了从 web 开发者（自学、非计算机科学学位）蜕变至 Google 软件工程师所制定的计划，其内容历时数月。
+
+![白板上编程 ———— 来自 HBO 频道的剧集，“硅谷”](https://d3j2pkmjtin6ou.cloudfront.net/coding-at-the-whiteboard-silicon-valley.png)
+
+这份清单适用于 **新手软件工程师**，或者想从软件/网站开发转向软件工程（需要计算机科学知识）的人员。如果你有多年的经验，并且声称拥有多年的软件工程经验，并且期待一次更艰难的面试。
+
+如果你具有多年的软件/网页开发经验，请注意，大型软件公司（例如 Google，Amazon，Facebook 和 Microsoft）将软件工程视为不同于软件/网页开发，并且它们需要计算机科学知识。
+
+如果你想成为可靠性工程师或运维工程师，请从可选列表（网络，安全）中学习更多。
 
 ---
 
@@ -459,7 +459,8 @@ tags:
 
 ## 数据结构
 
-- ### 数组（Arrays）
+### 数组（Arrays）
+
     - 实现一个可自动调整大小的动态数组。
     - [ ] 介绍：
         - [数组（视频）](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)
@@ -496,7 +497,8 @@ tags:
         - 因为在内存中分配的空间邻近，所以有助于提高性能
         - 空间需求 = （大于或等于 n 的数组容积）* 元素的大小。即便空间需求为 2n，其空间复杂度仍然是 O(n)
 
-- ### 链表（Linked Lists）
+### 链表（Linked Lists）
+
     - [ ] 介绍：
         - [ ] [单向链表（视频）](https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists)
         - [ ] [CS 61B —— 链表（一）（视频）](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
@@ -527,12 +529,14 @@ tags:
         - [介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
         - 并不需要实现
 
-- ### 堆栈（Stack）
+### 堆栈（Stack）
+
     - [ ] [堆栈（视频）](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
     - [ ] [使用堆栈 —— 后进先出（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_01-usingStacksForLast-inFirst-out.mp4)
     - [ ] 可以不实现，因为使用数组来实现并不重要
 
-- ### 队列（Queue）
+### 队列（Queue）
+
     - [ ] [使用队列 —— 先进先出（视频）](https://archive.org/details/0102WhatYouShouldKnow/05_03-usingQueuesForFirst-inFirst-out.mp4)
     - [ ] [队列（视频）](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
     - [ ] [原型队列/先进先出（FIFO）](https://en.wikipedia.org/wiki/Circular_buffer)
@@ -552,7 +556,8 @@ tags:
         - dequeue：O(1)（链表和数组）
         - empty：O(1)（链表和数组）
 
-- ### 哈希表（Hash table）
+### 哈希表（Hash table）
+
     - [ ] 视频：
         - [ ] [链式哈希表（视频）](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
         - [ ] [Table Doubling 和 Karp-Rabin（视频）](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
@@ -582,7 +587,7 @@ tags:
 
 ## 更多的知识
 
-- ### 二分查找（Binary search）
+### 二分查找（Binary search）
     - [ ] [二分查找（视频）](https://www.youtube.com/watch?v=D5SrAga1pno)
     - [ ] [二分查找（视频）](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
     - [ ] [详情](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
@@ -590,7 +595,7 @@ tags:
         - 二分查找（在一个已排序好的整型数组中查找）
         - 迭代式二分查找
 
-- ### 按位运算（Bitwise operations）
+### 按位运算（Bitwise operations）
     - [ ] [Bits 速查表](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-sheet.pdf) ── 你需要知道大量2的幂数值（从2^1 到 2^16 及 2^32）
     - [ ] 好好理解位操作符的含义：&、|、^、~、>>、<<
         - [ ] [字码（words）](https://en.wikipedia.org/wiki/Word_(computer_architecture))
@@ -619,7 +624,7 @@ tags:
 
 ## 树（Trees）
 
-- ### 树 —— 笔记 & 背景
+### 树 —— 笔记 & 背景
     - [ ] [系列：树（视频）](https://www.coursera.org/learn/data-structures/lecture/95qda/trees)
     - 基本的树形结构
     - 遍历
@@ -640,7 +645,7 @@ tags:
             - 后序遍历（DFS：左、右、节点本身）
             - 先序遍历（DFS：节点本身、左、右）
 
-- ### 二叉查找树（Binary search trees）：BSTs
+### 二叉查找树（Binary search trees）：BSTs
     - [ ] [二叉查找树概览（视频）](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
     - [ ] [系列（视频）](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/p82sw/core-introduction-to-binary-search-trees)
         - 从符号表开始到 BST 程序
@@ -670,7 +675,7 @@ tags:
         - [ ] delete_value
         - [ ] get_successor // 返回给定值的后继者，若没有则返回-1
 
-- ### 堆（Heap） / 优先级队列（Priority Queue） / 二叉堆（Binary Heap）
+### 堆（Heap） / 优先级队列（Priority Queue） / 二叉堆（Binary Heap）
     - 可视化是一棵树，但通常是以线性的形式存储（数组、链表）
     - [ ] [堆](https://en.wikipedia.org/wiki/Heap_(data_structure))
     - [ ] [介绍（视频）](https://www.coursera.org/learn/data-structures/lecture/2OpTs/introduction)
@@ -827,7 +832,7 @@ tags:
 
 ## 更多知识
 
-- ### 递归（Recursion）
+### 递归（Recursion）
     - [ ] Stanford 大学关于递归 & 回溯的课程:
         - [ ] [课程 8 | 抽象编程（视频）](https://www.youtube.com/watch?v=gl3emqCuueQ&list=PLFE6E58F856038C69&index=8)
         - [ ] [课程 9 | 抽象编程（视频）](https://www.youtube.com/watch?v=uFJhEPrbycQ&list=PLFE6E58F856038C69&index=9)
@@ -838,7 +843,7 @@ tags:
         - [ ] [什么是尾递归以及为什么它如此糟糕?](https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad)
         - [ ] [尾递归（视频）](https://www.youtube.com/watch?v=L1jjXGfxozc)
 
-- ### 动态规划（Dynamic Programming）
+### 动态规划（Dynamic Programming）
     - 在你的面试中或许没有任何动态规划的问题，但能够知道一个题目可以使用动态规划来解决是很重要的。
     - 这一部分会有点困难，每个可以用动态规划解决的问题都必须先定义出递推关系，要推导出来可能会有点棘手。
     - 我建议先阅读和学习足够多的动态规划的例子，以便对解决 DP 问题的一般模式有个扎实的理解。
@@ -863,11 +868,11 @@ tags:
         - [ ] [全局成对序列排列（视频）](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/UZ7o6/global-pairwise-sequence-alignment)
         - [ ] [本地成对序列排列（视频）](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/WnNau/local-pairwise-sequence-alignment)
 
-- ### 面向对象编程
+### 面向对象编程
     - 可选：[UML 2.0系列（视频）](https://www.youtube.com/watch?v=OkC7HKtiZC0&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc)
     - SOLID 面向对象编程原则：[SOLID 原则（视频）](https://www.youtube.com/playlist?list=PL4CE9F710017EA77A)
 
-- ### 设计模式
+### 设计模式
     - [ ] [UML 统一建模语言概览 (视频)](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
     - [ ] 主要有如下的设计模式:
         - [ ] 策略模式（strategy）
@@ -896,7 +901,7 @@ tags:
     - [ ] [实际操作：设计模式和对入门开发者的建议](https://sourcemaking.com/design-patterns-and-tips)
     - [ ] [Design patterns for humans](https://github.com/kamranahmedse/design-patterns-for-humans#structural-design-patterns)
 
-- ### 组合（Combinatorics） (n 中选 k 个) & 概率（Probability）
+### 组合（Combinatorics） (n 中选 k 个) & 概率（Probability）
     - [ ] [数据技巧: 如何找出阶乘、排列和组合(选择)（视频）](https://www.youtube.com/watch?v=8RRo6Ti9d0U)
     - [ ] [来点学校的东西: 概率（视频）](https://www.youtube.com/watch?v=sZkAAk9Wwa4)
     - [ ] [来点学校的东西: 概率和马尔可夫链（视频）](https://www.youtube.com/watch?v=dNaJg-mLobQ)
@@ -906,7 +911,7 @@ tags:
         - 只有视频 - 41 (每一个都短小精悍):
             - [ ] [概率解释（视频）](https://www.youtube.com/watch?v=uzkc-qNVoOk&list=PLC58778F28211FA19)
 
-- ### NP, NP-完全和近似算法
+### NP, NP-完全和近似算法
     - 知道最经典的一些 NP 完全问题，比如旅行商问题和背包问题，而且能在面试官试图忽悠你的时候识别出他们。
     - 知道 NP 完全是什么意思.
     - [ ] [计算复杂度（视频）](https://www.youtube.com/watch?v=moPtwq_cVH8&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=23)
@@ -926,7 +931,7 @@ tags:
         - [Jupyter 笔记本](http://nbviewer.jupyter.org/url/norvig.com/ipython/TSP.ipynb)
     - 《算法导论》（CLRS）的第 1048 - 1140 页。
 
-- ### 缓存（Cache）
+### 缓存（Cache）
     - [ ] LRU 缓存:
         - [ ] [LRU 的魔力 (100 Days of Google Dev)（视频）](https://www.youtube.com/watch?v=R5ON3iwx78M)
         - [ ] [实现 LRU（视频）](https://www.youtube.com/watch?v=bq6N7Ym81iI)
@@ -935,7 +940,7 @@ tags:
         - [ ] [MIT 6.004 L15: 存储体系（视频）](https://www.youtube.com/watch?v=vjYF_fAZI5E&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-&index=24)
         - [ ] [MIT 6.004 L16: 缓存的问题（视频）](https://www.youtube.com/watch?v=ajgC3-pyGlk&index=25&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-)
 
-- ### 进程（Processe）和线程（Thread）
+### 进程（Processe）和线程（Thread）
     - [ ] 计算机科学 162 - 操作系统 (25 个视频):
         - 视频 1-11 是关于进程和线程
         - [操作系统和系统编程（视频）](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)
@@ -971,7 +976,7 @@ tags:
         - [ ] [Keynote David Beazley - 兴趣主题 (Python 异步 I/O)](https://www.youtube.com/watch?v=ZzfHjytDceU)
         - [ ] [Python 中的互斥](https://www.youtube.com/watch?v=0zaPs8OtyKY)
 
-- ### 测试
+### 测试
     - 涵盖了:
         - 单元测试是如何工作的
         - 什么是模拟对象
@@ -987,11 +992,11 @@ tags:
         - [ ] [测试之道](http://jasonpolites.github.io/tao-of-testing/ch3-1.1.html)
     - [ ] [如何编写测试](http://jasonpolites.github.io/tao-of-testing/ch4-1.1.html)
 
-- ### 调度
+### 调度
     - 在操作系统中是如何运作的
     - 在操作系统部分的视频里有很多资料
 
-- ### 字符串搜索和操作
+### 字符串搜索和操作
     - [ ] [Sedgewick──后缀数组（Suffix Arrays）（视频）](https://www.coursera.org/learn/algorithms-part2/lecture/TH18W/suffix-arrays)
     - [ ] [Sedgewick──子字符串搜寻（视频）](https://www.coursera.org/learn/algorithms-part2/home/week/4)
         - [ ] [1. 子字符串搜寻导论](https://www.coursera.org/learn/algorithms-part2/lecture/n3ZpG/introduction-to-substring-search)
@@ -1003,7 +1008,7 @@ tags:
 
 如果你需要有关此主题的更多详细信息，请参阅“[一些主题的额外内容](#一些主题的额外内容)”中的“字符串匹配”部分。
 
-- ### 字典树（Tries）
+### 字典树（Tries）
 
     - 需要注意的是，字典树各式各样。有些有前缀，而有些则没有。有些使用字符串而不使用比特位来追踪路径。
     - 阅读代码，但不实现。
@@ -1021,23 +1026,23 @@ tags:
     - [ ] [标准教程（现实中的用例）（视频）](https://www.youtube.com/watch?v=TJ8SkcUSdbU)
     - [ ] [MIT，高阶数据结构，字符串（视频中间有点困难）（视频）](https://www.youtube.com/watch?v=NinWEPPrkDQ&index=16&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
 
-- ### 浮点数
+### 浮点数
 
     - [ ] 简单8位：[浮点数的表示形式-1（视频──计算中存在错误，请参见视频说明）](https://www.youtube.com/watch?v=ji3SfClm8TU)
     - [ ] 32位：[IEEE754 32位浮点二进制（视频）](https://www.youtube.com/watch?v=50ZYcZebIec)
 
-- ### Unicode
+### Unicode
     - [ ] [每一个软件开发者的绝对最低限度，必须要知道的关于 Unicode 和字符集知识](http://www.joelonsoftware.com/articles/Unicode.html)
     - [ ] [关于处理文本需要的编码和字符集，每个程序员绝对需要知道的知识](http://kunststube.net/encoding/)
 
-- ### 字节序（Endianness）
+### 字节序（Endianness）
     - [大/小端序](https://web.archive.org/web/20180107141940/http://www.cs.umd.edu:80/class/sum2003/cmsc311/Notes/Data/endian.html)
     - [大端序 Vs 小端序（视频）](https://www.youtube.com/watch?v=JrNF0KRAlyo)
     - [由里入内的大端序与小端序（视频）](https://www.youtube.com/watch?v=oBSuXP-1Tc0)
         - 对于内核开发非常具有技术性，如果大多数的内容听不懂也没关系。
         - 前半部就已经足够了。
 
-- ### 网络（视频）
+### 网络（视频）
     - **如果你具有网络经验或想成为可靠性工程师或运维工程师，期待你的问题**
     - 知道这些有益无害，多多益善!
     - [ ] [可汗学院](https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org)
@@ -1410,14 +1415,14 @@ tags:
 
     我把它们加进来是为了让你成为更全方位的软件工程师，并且留意一些技术以及算法，让你拥有更大的工具箱。
 
-- ### 编译器
+### 编译器
 
     - [编译器的工作方式，约1分钟（视频）](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
     - [Harvard CS50-编译器（视频）](https://www.youtube.com/watch?v=CSZLNYF4Klo)
     - [C ++（视频）](https://www.youtube.com/watch?v=twodd1KFfGk)
     - [了解编译器优化（C ++）（视频）](https://www.youtube.com/watch?v=FnGCDLhaxKU)
 
-- ### Emacs and vi(m)
+### Emacs and vi(m)
     - 熟悉基于 unix 的代码编辑器
     - vi(m):
         - [使用 vim 进行编辑 01 - 安装, 设置和模式 (视频)](https://www.youtube.com/watch?v=5givLEMcINQ&index=1&list=PL13bz4SHGmRxlZVmWQ9DvXo1fEg4UdGkr)
@@ -1438,7 +1443,7 @@ tags:
         - [使用 Emacs 开发 C 程序](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Writing_C_programs_with_Emacs)
         - [(或许) 深度组织模式:管理结构 (视频)](https://www.youtube.com/watch?v=nsGYet02bEk)
 
-- ### Unix 命令行工具
+### Unix 命令行工具
     - 下列内容包含优秀工具
     - bash
     - cat
@@ -1452,7 +1457,7 @@ tags:
     - [strace](https://en.wikipedia.org/wiki/Strace)
     - [tcpdump](https://danielmiessler.com/study/tcpdump/)
 
-- ### 信息论 (视频)
+### 信息论 (视频)
     - [Khan Academy 可汗学院](https://www.khanacademy.org/computing/computer-science/informationtheory)
     - 更多有关马尔可夫的内容:
         - [马尔可夫内容生成（Core Markov Text Generation）](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/waxgx/core-markov-text-generation)
@@ -1460,7 +1465,7 @@ tags:
         - [一个马尔可夫内容生成器的项目（Project = Markov Text Generation Walk Through）](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/EUjrq/project-markov-text-generation-walk-through)
     - 关于更多信息，请参照下方 MIT 6.050J 信息和系统复杂度的内容。
 
-- ### 奇偶校验位 & 汉明码 (视频)
+### 奇偶校验位 & 汉明码 (视频)
     - [入门](https://www.youtube.com/watch?v=q-3BctoUpHE)
     - [奇偶校验位](https://www.youtube.com/watch?v=DdMcAUlxh1M)
     - 汉明码(Hamming Code):
@@ -1468,19 +1473,19 @@ tags:
         - [修正错误](https://www.youtube.com/watch?v=JAMLuxdHH8o)
     - [检查错误](https://www.youtube.com/watch?v=wbH2VxzmoZk)
 
-- ### 系统熵值（Entropy）
+### 系统熵值（Entropy）
     - 请参考下方视频
     - 观看之前，请先确定观看了信息论的视频
     - [信息理论, 克劳德·香农, 熵值, 系统冗余, 数据比特压缩 (视频)](https://youtu.be/JnJq3Py0dyM?t=176)
 
-- ### 密码学
+### 密码学
     - 请参考下方视频
     - 观看之前，请先确定观看了信息论的视频
     - [可汗学院](https://www.khanacademy.org/computing/computer-science/密码学)
     - [密码学: 哈希函数](https://www.youtube.com/watch?v=KqqOXndnvic&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=30)
     - [密码学: 加密](https://www.youtube.com/watch?v=9TNI2wHmaeI&index=31&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
 
-- ### 压缩
+### 压缩
     - 观看之前，请先确定观看了信息论的视频
     - Computerphile (视频)：
         - [压缩](https://www.youtube.com/watch?v=Lto-ajuqW3w)
@@ -1492,7 +1497,7 @@ tags:
     - [数据压缩的艺术](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)
     - [(可选) 谷歌开发者：GZIP 还差远了呢!](https://www.youtube.com/watch?v=whGwm0Lky2s)
 
-- ### 计算机安全
+### 计算机安全
     - [MIT（23个视频）](https://www.youtube.com/playlist?list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
         - [威胁模型：入门](https://www.youtube.com/watch?v=GqmQg-cszw4&index=1&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
         - [控制劫持攻击](https://www.youtube.com/watch?v=6bwzNg5qQ0o&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&index=2)
@@ -1507,16 +1512,16 @@ tags:
         - [网络协议](https://www.youtube.com/watch?v=QOtA76ga_fY&index=12&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
         - [旁路攻击](https://www.youtube.com/watch?v=PuVMkSEcPiI&index=15&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
 
-- ### 垃圾回收
+### 垃圾回收
     - [ ] [Python 中的垃圾回收 (视频)](https://www.youtube.com/watch?v=iHVs_HkjdmI)
     - [ ] [深度解析：论垃圾回收在 JAVA 中的重要性](https://www.infoq.com/presentations/garbage-collection-benefits)
     - [ ] [深度解析：论垃圾回收在 Python 中的重要性(视频)](https://www.youtube.com/watch?v=P-8Z0-MhdQs&list=PLdzf4Clw0VbOEWOS_sLhT_9zaiQDrS5AR&index=3)
 
-- ### 并行编程
+### 并行编程
     - [ ] [Coursera (Scala)](https://www.coursera.org/learn/parprog1/home/week/1)
     - [ ] [用于高性能并行计算的高效Python（视频）](https://www.youtube.com/watch?v=uY85GkaYzBk)
 
-- ### 消息传递，序列化和队列系统
+### 消息传递，序列化和队列系统
     - [Thrift](https://thrift.apache.org/)
         - [教程](http://thrift-tutorial.readthedocs.io/en/latest/intro.html)
     - [协议缓冲](https://developers.google.com/protocol-buffers/)
@@ -1538,42 +1543,42 @@ tags:
     - [MessagePack](http://msgpack.org/index.html)
     - [Avro](https://avro.apache.org/)
 
-- ### A*搜索算法
+### A*搜索算法
 
     - [A 搜索算法](https://en.wikipedia.org/wiki/A*_search_algorithm)
     - [A* 路径搜索教程（教程）](https://www.youtube.com/watch?v=KNXfSOx4eEE)
     - [A* 路径搜索（E01：算法解释）（视频）](https://www.youtube.com/watch?v=-L-WgKMFuhE)
 
-- ### 快速傅里叶变换
+### 快速傅里叶变换
     - [傅立叶变换的交互式指南](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/)
     - [什么是傅立叶变换？论傅立叶变换的用途](http://www.askamathematician.com/2012/09/q-what-is-a-fourier-transform-what-is-it-used-for/)
     - [什么是傅立叶变换？ (视频)](https://www.youtube.com/watch?v=Xxut2PN-V8Q)
     - [分而治之：FFT（视频）](https://www.youtube.com/watch?v=iTMn0Kt18tg&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=4)
     - [FTT 是什么](http://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/)
 
-- ### 布隆过滤器
+### 布隆过滤器
     - 给定布隆过滤器m比特位和k个哈希函数，插入和成员检测都会是 O(k)。
     - [布隆过滤器（视频）](https://www.youtube.com/watch?v=-SuTGoFYjZs)
     - [布隆过滤器 | 数据挖掘 | Stanford University（视频）](https://www.youtube.com/watch?v=qBTdukbzc78)
     - [教程](http://billmill.org/bloomfilter-tutorial/)
     - [如何写一个布隆过滤器应用](http://blog.michaelschmatz.com/2016/04/11/how-to-write-a-bloom-filter-cpp/)
 
-- ### HyperLogLog
+### HyperLogLog
     - [如何仅使用1.5KB内存计算十亿个不同的对象](http://highscalability.com/blog/2012/4/5/big-data-counting-how-to-count-a-billion-distinct-objects-us.html)
 
-- ### 局部敏感哈希
+### 局部敏感哈希
     - 用于确定文件的相似性
     - MD5 或 SHA 的反义词，用于确定2个文档/字符串是否完全相同
     - [Simhashing（希望如此）变得简单](http://ferd.ca/simhashing-hopefully-made-simple.html)
 
-- ### van Emde Boas 树
+### van Emde Boas 树
     - [分而治之：van Emde Boas 树 (视频)](https://www.youtube.com/watch?v=hmReJCupbNU&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=6)
     - [MIT课堂笔记](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/lecture-notes/MIT6_046JS12_lec15.pdf)
 
-- ### 增强数据结构
+### 增强数据结构
     - [CS 61B 第 39 课: 增强数据结构](https://youtu.be/zksIj9O8_jc?list=PL4BBB74C7D2A1049C&t=950)
 
-- ### 平衡查找树（Balanced search trees）
+### 平衡查找树（Balanced search trees）
     - 掌握至少一种平衡查找树（并懂得如何实现）：
     - “在各种平衡查找树当中，AVL 树和2-3树已经成为了过去，而红黑树（red-black trees）看似变得越来越受人青睐。这种令人特别感兴趣的数据结构，亦称伸展树（splay tree）。它可以自我管理，且会使用轮换来移除任何访问过根节点的键。” —— Skiena
     - 因此，在各种各样的平衡查找树当中，我选择了伸展树来实现。虽然，通过我的阅读，我发现在面试中并不会被要求实现一棵平衡查找树。但是，为了胜人一筹，我们还是应该看看如何去实现。在阅读了大量关于红黑树的代码后，我才发现伸展树的实现确实会使得各方面更为高效。
@@ -1635,51 +1640,51 @@ tags:
             - 覆盖有高速缓存参数无关型（cache-oblivious）B 树和非常有趣的数据结构
             - 头37分钟讲述的很专业，或许可以跳过（B 指块的大小、即缓存行的大小）
 
-- ### k-D树
+### k-D树
     - 非常适合在矩形或更高维度的对象中查找点数
     - 最适合k近邻
     - [Kd树（视频）](https://www.youtube.com/watch?v=W94M9D_yXKk)
     - [kNN K-d树算法（视频）](https://www.youtube.com/watch?v=Y4ZgLlDfKDg)
 
-- ### 跳表
+### 跳表
     - "有一种非常迷幻的数据类型" - Skiena
     - [随机化: 跳表 (视频)](https://www.youtube.com/watch?v=2g9OSRKJuzM&index=10&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
     - [更生动详细的解释](https://en.wikipedia.org/wiki/Skip_list)
 
-- ### 网络流
+### 网络流
     - [5分钟简析 Ford-Fulkerson──一步步示例 (视频)](https://www.youtube.com/watch?v=v1VgJmkEJW0)
     - [Ford-Fulkerson 算法 (视频)](https://www.youtube.com/watch?v=v1VgJmkEJW0)
     - [网络流 (视频)](https://www.youtube.com/watch?v=2vhN4Ice5jI)
 
-- ### 不相交集 & 联合查找
+### 不相交集 & 联合查找
     - [UCB 61B - 不相交集；排序 & 选择(视频)](https://www.youtube.com/watch?v=MAEGXTwmUsI&list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd&index=21)
     - [Sedgewick算法──Union-Find（6视频）](https://www.coursera.org/learn/algorithms-part1/home/week/1)
 
-- ### 快速处理的数学
+### 快速处理的数学
     - [整数运算, Karatsuba 乘法 (视频)](https://www.youtube.com/watch?v=eCaXlAaN2uE&index=11&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
     - [中国剩余定理 (在密码学中的使用) (视频)](https://www.youtube.com/watch?v=ru7mWZJlRQg)
 
-- ### 树堆 (Treap)
+### 树堆 (Treap)
     - 一个二叉搜索树和一个堆的组合
     - [树堆](https://en.wikipedia.org/wiki/Treap)
     - [数据结构：树堆的讲解（视频）](https://www.youtube.com/watch?v=6podLUYinH8)
     - [集合操作的应用(Applications in set operations)](https://www.cs.cmu.edu/~scandal/papers/treaps-spaa98.pdf)
 
-- ### 线性规划（Linear Programming）（视频）
+### 线性规划（Linear Programming）（视频）
     - [线性规划](https://www.youtube.com/watch?v=M4K6HYLHREQ)
     - [寻找最小成本](https://www.youtube.com/watch?v=2ACJ9ewUC6U)
     - [寻找最大值](https://www.youtube.com/watch?v=8AA_81xI3ik)
     - [用 Python 解决线性方程式──单纯形算法](https://www.youtube.com/watch?v=44pAWI7v5Zk)
 
-- ### 几何：凸包（Geometry, Convex hull）（视频）
+### 几何：凸包（Geometry, Convex hull）（视频）
     - [Graph Alg. IV: 几何算法介绍 - 第 9 课](https://youtu.be/XIAQRlNkJAw?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3164)
     - [Graham & Jarvis: 几何算法 - 第 10 课](https://www.youtube.com/watch?v=J5aJEcOr6Eo&index=10&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
     - [分而治之: 凸包, 中值查找](https://www.youtube.com/watch?v=EzeYI7p9MjU&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=2)
 
-- ### 离散数学
+### 离散数学
     - 查看下面的视频
 
-- ### 机器学习（Machine Learning）
+### 机器学习（Machine Learning）
     - 为什么学习机器学习？
         - [谷歌如何将自己改造成一家「机器学习优先」公司？](https://backchannel.com/how-google-is-remaking-itself-as-a-machine-learning-first-company-ada63defcb70)
         - [智能计算机系统的大规模深度学习 (视频)](https://www.youtube.com/watch?v=QSaZGT4-6EY)
