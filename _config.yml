@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: yanbo
+title: zhangyuanes
 subtitle: yanbo
 description: 准备！
 keywords: yanbo
@@ -107,6 +107,8 @@ feed:
   order_by: -date
 
 # hexo-admin authentification
+# 在本地浏览的时候在url之后加上admin即可访问
+# 这里的password是密码经过sha256加密
 admin:
   username: yanbo
   password_hash: $2a$10$SD3chEWmZ4/qWCOOvmVv3ut5/lKgPqDx5YBLwtZHt07/XzcG4TEAK
