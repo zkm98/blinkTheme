@@ -106,15 +106,15 @@ indexbtn:
   enable: true
   name: 快速搭建
   icon: fab fa-cloud-download
-  url: https://github.com/zhangyuanes/blinkTheme
+  url: https://github.com/zkm98/blinkTheme
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/zhangyuanes
-  email: zhangyuanes@gmail.com
-  qq: 1787948156
+  github:  https://github.com/zkm98
+  email: 952917537@qq.com
+  qq: 952917537
   rss: true # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
@@ -324,7 +324,7 @@ minivaline:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/zhangyuanes
+  url: https://github.com/zkm98
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,

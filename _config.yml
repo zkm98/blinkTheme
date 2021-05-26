@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: zhangyuanes
-subtitle: yanbo
+title: zkm98
+subtitle: 霜骨炽翼
 description: 准备！
-keywords: yanbo
-author: zhangyuanes
+keywords: zkm98
+author: zkm98
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://zhangyuanes.github.io/
+url: https://zkm98.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -85,8 +85,8 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/zhangyuanes/zhangyuanes.github.io.git
-  branch: master
+  repo: https://github.com/zkm98/zkm98.github.io.git
+  branch: main
 
 search:
   path: search.xml
@@ -110,7 +110,7 @@ feed:
 # 在本地浏览的时候在url之后加上admin即可访问
 # 这里的password是密码经过sha256加密
 admin:
-  username: yanbo
+  username: zkm98
   password_hash: $2a$10$SD3chEWmZ4/qWCOOvmVv3ut5/lKgPqDx5YBLwtZHt07/XzcG4TEAK
-  secret: yanbo
+  secret: zkm98
   deployCommand: 'hexo-deploy.bat'

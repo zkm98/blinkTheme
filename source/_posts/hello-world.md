@@ -50,4 +50,4 @@ windows下直接安装就OK。这里采用了NVM的Node版本管理来做安装,
 [gitpage_jekyll]:https://sspai.com/post/54608
 [installNode]:https://mupceet.com/2020/02/the-best-way-to-install-nodejs/
 [NVM github]:https://github.com/nvm-sh/nvm#installing-and-updating
-[repo]:https://github.com/zhangyuanes/blinkTheme
+[repo]:https://github.com/zkm98/blinkTheme
